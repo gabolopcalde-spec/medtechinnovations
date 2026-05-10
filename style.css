@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;;
+}
+
+:root {
+    --color-p : #165DFF;
+    --color-ac : #4080FF;
+    --color-ao : #0F48C9;
+}
+
+body {
+    padding-top: 11vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+/*Nav*/
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    transition: transform 0.25s ease;
+    border-bottom: .09rem solid gray;
+}
+
+nav.nav-hidden {
+    transform: translateY(-100%);
+}
+
+nav figure {
+    padding-left: 2rem;
+    width: 33.33%;
+}
+
+#navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    gap: 1rem;
+    height: 100%;
+}
+
+#navContact {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.3rem;
+    height: 100%;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: border-bottom 0.2s ease;
+}
+
+nav a:hover {
+    border-bottom: .09rem solid var(--color-p);
+}
+
+
+/*Section 1*/
+
+section {
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+#main {
+    flex: 1;
+}
+
+#main header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main header figure {
+    display: flex;
+    overflow: hidden;
+    border-radius: 2rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .5rem .5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+#main header figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerCopyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 975px) {
+    h1{
+      font-size: 3rem;  
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+
+}
