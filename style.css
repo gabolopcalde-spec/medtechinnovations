@@ -152,6 +152,38 @@ footer {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
+    nav img {
+        width: 3rem;
+    }
 
+    nav a {
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: .7rem;
+    }
+
+    p {
+        font-size: .6rem;
+    }
+
+    .footer,
+    .footerCopyright{
+        font-size: .6rem;
+    }
+
+    #navContact a {
+        width: 3rem;
+    }
 }
