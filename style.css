@@ -16,8 +16,6 @@ body {
     padding-top: 11vh;
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 h1{
@@ -89,10 +87,6 @@ nav a:hover {
 
 section {
     padding: 2rem 2rem 3rem 2rem;
-}
-
-#main {
-    flex: 1;
 }
 
 #main header{
